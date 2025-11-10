@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExcerciseCard = () => {
+const ExerciseCard = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const ExcerciseCard = () => {
     );
 };
 
-export default ExcerciseCard;
+export default ExerciseCard;

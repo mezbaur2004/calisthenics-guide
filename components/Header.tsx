@@ -6,9 +6,9 @@ import { Menu, X } from 'lucide-react'
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
-    const pathname = usePathname()
+    const pathname:string = usePathname()
 
-    const navItems = [
+    const navItems:{name:string,href:string}[] = [
         { name: 'Home', href: '/' },
         { name: 'Exercises', href: '/exercises' },
         { name: 'Routines', href: '/routines' },
@@ -23,7 +23,7 @@ const Header = () => {
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-6">
-                    {navItems.map((item) => (
+                    {navItems.map((item:{name:string,href:string}) => (
                         <Link
                             key={item.href}
                             href={item.href}
@@ -41,7 +41,7 @@ const Header = () => {
                 {/* Mobile Button */}
                 <button
                     className="md:hidden text-gray-700 hover:text-amber-600"
-                    onClick={() => setMenuOpen(!menuOpen)}
+                    onClick={():void => setMenuOpen(!menuOpen)}
                 >
                     {menuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
@@ -54,7 +54,7 @@ const Header = () => {
                         <Link
                             key={item.href}
                             href={item.href}
-                            onClick={() => setMenuOpen(false)}
+                            onClick={():void => setMenuOpen(false)}
                             className={`block px-6 py-3 text-sm font-medium ${
                                 pathname === item.href
                                     ? 'text-amber-600 bg-amber-50 dark:bg-neutral-800'

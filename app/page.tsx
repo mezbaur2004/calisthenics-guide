@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function HomePage() {
     return (
-        <section className="flex flex-col items-center justify-center text-center min-h-screen px-6 py-10">
+        <section className="flex flex-col items-center justify-center text-center min-h-screen mt-5 px-6 py-10">
             <div className="p-6 bg-amber-400 rounded-xl shadow-sm mb-10 max-w-2xl">
                 <h1 className="text-gray-800 font-sans text-3xl font-bold mb-2">
                     What is Calisthenics?
@@ -16,7 +16,7 @@ export default function HomePage() {
                 {/* Exercises Section */}
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg shadow-sm flex flex-col items-center">
                     <h2 className="text-lg font-semibold text-blue-700 mb-2">Exercises</h2>
-                    <p className="text-sm text-gray-300 mb-4">
+                    <p className="text-sm text-gray-900 dark:text-gray-300 mb-4">
                         Master the fundamentals - push, pull, and core movements to build
                         real body control.
                     </p>
@@ -28,10 +28,11 @@ export default function HomePage() {
                     </Link>
                 </div>
 
+
                 {/* Routines Section */}
                 <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg shadow-sm flex flex-col items-center">
                     <h2 className="text-lg font-semibold text-green-700 mb-2">Routines</h2>
-                    <p className="text-sm text-gray-300 mb-4">
+                    <p className="text-sm text-gray-900 dark:text-gray-300 mb-4">
                         Structured workout plans for strength, endurance, and skill
                         progression.
                     </p>
@@ -46,7 +47,7 @@ export default function HomePage() {
                 {/* Nutrition Section */}
                 <div className="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-lg shadow-sm flex flex-col items-center">
                     <h2 className="text-lg font-semibold text-orange-700 mb-2">Nutrition</h2>
-                    <p className="text-sm text-gray-300 mb-4">
+                    <p className="text-sm text-gray-900 dark:text-gray-300 mb-4">
                         Learn what to eat to recover faster, stay lean, and fuel your
                         workouts naturally.
                     </p>

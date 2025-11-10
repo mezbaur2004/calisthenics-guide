@@ -1,4 +1,17 @@
-export const exercises = [
+export type Exercise={
+    id:string
+    slug:string
+    title:string
+    difficulty:string
+    description:string
+    image:string
+    targetArea:string[]
+    equipment:string
+    progression:string
+    tips:string[]
+}
+
+const Exercises :Exercise[] = [
     {
         id: "pushups",
         slug: "push-ups",
@@ -9,6 +22,7 @@ export const exercises = [
         targetArea: ["Chest", "Triceps", "Shoulders", "Core"],
         equipment: "None",
         progression: "Incline push-ups → Standard push-ups → Diamond push-ups → Archer push-ups",
+        tips: ["Keep core tight", "Elbows at ~45°", "Do not sag hips"],
     },
     {
         id: "pullups",
@@ -20,6 +34,7 @@ export const exercises = [
         targetArea: ["Back", "Biceps", "Forearms", "Shoulders"],
         equipment: "Pull-up bar",
         progression: "Assisted pull-ups → Standard pull-ups → Weighted pull-ups",
+        tips: ["Avoid swinging", "Engage lats", "Full range of motion"],
     },
     {
         id: "dips",
@@ -31,6 +46,7 @@ export const exercises = [
         targetArea: ["Chest", "Triceps", "Shoulders"],
         equipment: "Parallel bars",
         progression: "Bench dips → Parallel bar dips → Weighted dips",
+        tips: ["Keep shoulders down", "Elbows close to body", "Full range of motion"],
     },
     {
         id: "squat",
@@ -42,6 +58,7 @@ export const exercises = [
         targetArea: ["Quadriceps", "Glutes", "Hamstrings", "Core"],
         equipment: "None",
         progression: "Air squats → Jump squats → Pistol squats",
+        tips: ["Keep knees tracking over toes", "Engage core", "Maintain upright torso"],
     },
     {
         id: "plank",
@@ -53,6 +70,7 @@ export const exercises = [
         targetArea: ["Core", "Shoulders", "Back"],
         equipment: "None",
         progression: "Knee plank → Standard plank → Plank with leg lift",
+        tips: ["Breathe steadily", "Engage glutes", "Do not arch back"],
     },
     {
         id: "muscleup",
@@ -64,5 +82,8 @@ export const exercises = [
         targetArea: ["Back", "Chest", "Shoulders", "Arms", "Core"],
         equipment: "Pull-up bar or rings",
         progression: "Pull-ups → Chest-to-bar pull-ups → Muscle-up",
+        tips: ["Explosive movement", "Control the transition", "Engage shoulders and core"],
     },
 ];
+
+export default Exercises;
