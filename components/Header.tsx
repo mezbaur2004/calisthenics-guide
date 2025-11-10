@@ -10,7 +10,7 @@ const Header = () => {
 
     const navItems:{name:string,href:string}[] = [
         { name: 'Home', href: '/' },
-        { name: 'Exercises', href: '/exercises' },
+        { name: 'Workouts', href: '/workouts' },
         { name: 'Routines', href: '/routines' },
         { name: 'Nutrition', href: '/nutrition' },
     ]

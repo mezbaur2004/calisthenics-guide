@@ -15,13 +15,13 @@ export default function HomePage() {
             <div className="grid gap-8 sm:grid-cols-3 w-full max-w-4xl">
                 {/* Exercises Section */}
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg shadow-sm flex flex-col items-center">
-                    <h2 className="text-lg font-semibold text-blue-700 mb-2">Exercises</h2>
+                    <h2 className="text-lg font-semibold text-blue-700 mb-2">Workout</h2>
                     <p className="text-sm text-gray-900 dark:text-gray-300 mb-4">
                         Master the fundamentals - push, pull, and core movements to build
                         real body control.
                     </p>
                     <Link
-                        href="/exercises"
+                        href="/workouts"
                         className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
                     >
                         Explore
