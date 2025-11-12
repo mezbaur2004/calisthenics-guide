@@ -30,7 +30,7 @@ const Header = () => {
                             className={`text-sm font-medium transition ${
                                 pathname === item.href
                                     ? 'text-amber-600 border-b-2 border-amber-600 pb-1'
-                                    : 'text-gray-700 hover:text-amber-600'
+                                    : 'text-gray-500 hover:text-amber-600'
                             }`}
                         >
                             {item.name}
