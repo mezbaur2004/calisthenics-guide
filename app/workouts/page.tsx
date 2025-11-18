@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import Workouts, { Workout } from "@/lib/workouts";
 
@@ -7,8 +6,8 @@ const Page = () => {
     const difficultyColors: Record<string, string> = {
         Beginner: 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100',
         Intermediate: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
-        Advanced: 'bg-red-800 text-white dark:bg-red-900 dark:text-white', // deep red
-        Elite: 'bg-gray-800 text-gray-100 dark:bg-gray-200 dark:text-gray-900', // silver/black/white
+        Advanced: 'bg-red-800 text-white dark:bg-red-900 dark:text-white',
+        Elite: 'bg-gray-800 text-gray-100 dark:bg-gray-200 dark:text-gray-900',
     };
 
 
