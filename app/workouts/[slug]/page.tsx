@@ -1,4 +1,4 @@
-import Workouts, {Workout} from '@/lib/workouts'
+import Workouts, {Workout} from '@/lib/workouts';
 
 interface PageProps{
     params: Promise<{slug:string}>
