@@ -15,7 +15,6 @@ export default function HomePage() {
             </div>
 
             {/* Key Benefits */}
-            {/* Key Benefits */}
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 max-w-4xl w-full">
                 <div className="flex flex-col items-center p-4 bg-gray-50 dark:bg-neutral-800 rounded-lg shadow-sm">
                     <FaDumbbell className="text-amber-500 text-3xl mb-2" />

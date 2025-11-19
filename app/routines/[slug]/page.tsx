@@ -13,7 +13,6 @@ const Page = async ({params}: PageProps) => {
     if (!routine) return <p className="p-6 text-center mt-5 text-red-500">Routine not found</p>
 
     const matched:Workout[] = Workouts.filter(w => routine.exercises.includes(w.slug));
-    console.log(matched);
 
     const difficultyColors: Record<string, string> = {
         Beginner: 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100',
