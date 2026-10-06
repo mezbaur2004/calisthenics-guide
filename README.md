@@ -9,7 +9,7 @@ https://calisthenics-guide-flame.vercel.app
 ---
 
 ## 📁 Tech Stack
-- Next.js 14
+- Next.js 16
 - TypeScript
 - TailwindCSS
 - Frontend-only
